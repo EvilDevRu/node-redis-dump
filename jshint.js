@@ -1,5 +1,5 @@
 {
-	globals: ['Cube', '_'],
+	globals: ['_'],
 	esnext: true,
 	bitwise: true,
 	camelcase: true,
