@@ -11,7 +11,7 @@ Backup and restore your Redis data written on node.js
 
 ## Quick Start
 ```js
-var RedisDump = require('./index.js'),
+var RedisDump = require('./node-redis-dump'),
     dump = new RedisDump({
         host: 'localhost',
         port: 6379,
