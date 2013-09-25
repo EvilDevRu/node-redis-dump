@@ -5,4 +5,4 @@
  * @author Dmitriy Yurchenko <feedback@evildev.ru>
  */
 
-module.exports = require('./lib/redis-dump.js');
+module.exports = require('./lib/node-redis-dump.js');
