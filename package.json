@@ -1,0 +1,30 @@
+{
+	"author": {
+		"name": "Dmitriy Yurchenko",
+		"email": "feedback@evildev.ru"
+	},
+	"name": "redis-dump",
+	"description": "Backup and restore your Redis data written in node.js.",
+	"keywords": [
+		"dump",
+		"redis"
+	],
+	"version": "0.1.0",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:EvilDevRu/redis-dump.git"
+	},
+	"engines": {
+		"node": "*"
+	},
+	"dependencies": {
+		"underscore": "~1.5.2",
+		"redis": "~0.8.4",
+		"async": "~0.2.9"
+	},
+	"main": "./index.js",
+	"readmeFilename": "README.md",
+	"bugs": {
+		"url": "https://github.com/EvilDevRu/redis-dump/issues"
+	}
+}
