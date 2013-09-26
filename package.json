@@ -3,7 +3,7 @@
 		"name": "Dmitriy Yurchenko",
 		"email": "feedback@evildev.ru"
 	},
-	"name": "redis-dump",
+	"name": "node-redis-dump",
 	"description": "Backup and restore your Redis data written in node.js.",
 	"keywords": [
 		"dump",
