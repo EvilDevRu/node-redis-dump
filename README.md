@@ -6,7 +6,7 @@ Backup and restore your Redis data written on node.js
 ## Installation
 
 ```
-  $ git clone git@github.com:EvilDevRu/node-redis-dump.git
+  $ npm install node-redis-dump
 ```
 
 ## Quick Start
