@@ -1,10 +1,10 @@
 /**
- * Redis-dump test library file.
+ * Redis export example.
  *
  * @author Dmitriy Yurchenko <feedback@evildev.ru>
  */
 
-var RedisDump = require('./index.js'),
+var RedisDump = require('./../index.js'),
 	dump = new RedisDump({
 		host: 'localhost',
 		port: 6379,
@@ -19,6 +19,8 @@ dump.export({
 	type: 'redis',
 	//isCompress: false,
 	callback: function(err, data) {
+		'use strict';
+
 		if (err) {
 			console.log('Could\'t not make redis dump!', err);
 			return;
