@@ -33,7 +33,9 @@ var REDIS_DUMP = 'SET articles:1:desc "DESC" ' +
 	'SET rubrics:3:name "Node.js" ' +
 	'SET users:1:password "123" ' +
 	'SET rubrics:3:alias "nodejs" ' +
-	'SET rubrics:1:alias "postgresql"';
+	'SET rubrics:1:alias "postgresql"' +
+	'HSET "hashobj:1" "hashkey" "hashvalue"' +
+	'HSET "hashobj:1" "key2" "val"';
 
 var RedisDump = require('./../index.js'),
 	dump = new RedisDump({
@@ -51,7 +53,7 @@ dump.import({
 	db: 0,
 	data: REDIS_DUMP,
 	clear: true,
-	callback: function(err, status) {
+	callback: function(err, report) {
 		'use strict';
 
 		if (err) {
@@ -59,6 +61,6 @@ dump.import({
 			return;
 		}
 
-		console.log('Import status:', status);
+		console.log('Report:', report);
 	}
 });
