@@ -16,7 +16,7 @@ var RedisDump = require('./../index.js'),
 
 dump.connect();
 dump.export({
-	type: 'redis',
+	type: 'json',
 	//isCompress: false,
 	callback: function(err, data) {
 		'use strict';
