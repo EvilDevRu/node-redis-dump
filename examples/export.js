@@ -27,7 +27,9 @@ dump.export({
 		}
 
 		console.log('--------- REDIS DUMP ----------');
-		console.log(data);
+		if (typeof data === 'string' && data.length) {
+			console.log(data);
+		}
 		console.log('--------- /REDIS DUMP ----------');
 	}
 });
