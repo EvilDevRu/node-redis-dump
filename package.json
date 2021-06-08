@@ -18,9 +18,9 @@
 		"node": "*"
 	},
 	"dependencies": {
-		"underscore": "~1.5.2",
-		"redis": "~0.8.4",
-		"async": "~0.2.9"
+		"underscore": "~1.9.1",
+		"redis": "~2.8.0",
+		"async": "~2.6.1"
 	},
 	"main": "./index.js",
 	"readmeFilename": "README.md",
